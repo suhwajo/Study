@@ -1,0 +1,67 @@
+package com.ssafy.ws.step3;
+
+import java.util.Scanner;
+
+/**
+ * 가위,바위,보 게임을 하는 클래스
+ */
+public class GameTest {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("가위바위보 게임을 시작합니다. 아래 보기 중 하나를 고르세요.\n1. 5판 3승 \n2. 3판 2승 \n3. 1판 1승");
+		System.out.print("번호를 입력하세요. ");
+		int i = scanner.nextInt();
+		int iter=0;
+		int win=0;
+		int cnt=0;
+		
+		if(i==1) {
+			iter=5;win=3;
+		}
+		else if(i==2) {
+			iter=3;win=2;
+			
+		}
+		else if(i==3) {
+			iter=1;win=1;
+		}
+		
+		for(int j=0;j<iter;j++) {
+			System.out.print("가위바위보 중 하나 입력 : ");
+			String a=scanner.next();
+			int cc=(int)(Math.random()*3)+1;
+			
+			if(cc==1) { //가위
+				if(a.equals("가위")) {
+					System.out.println("비겼습니다!!!");
+					cnt++;
+				}
+				else if(a.equals("바위")) {
+					System.out.println("이겼습니다!!!");
+					cnt++;
+				}
+				else if(a.equals("보")) {
+					System.out.println("졌습니다!!!");
+				}
+			}
+			else if(cc==2) { //바위
+				if(a.equals("가위")) {
+					System.out.println("이겼습니다!!!");
+					cnt++;
+				}
+				else if(a.equals("바위")) {
+					System.out.println("비겼습니다!!!");
+					cnt++;
+				}
+				else if(a.equals("보")) {
+					System.out.println("졌습니다!!!");
+					cnt++;
+				}
+			}
+			else { //보
+				
+			}
+		}
+	}
+}

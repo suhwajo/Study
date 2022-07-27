@@ -1,0 +1,27 @@
+package com.ssafy.ws02.step3;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+/**
+ * B구획의 빌딩 최고 높이 구하기
+ */ 
+public class Solution {
+
+	public static void main(String[] args) throws NumberFormatException, IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		
+		int t = Integer.parseInt(br.readLine());
+		
+		for(int i=0;i<t;i++) {
+			int n = Integer.parseInt(br.readLine());
+			int arr[][] = new int[n][n];
+			
+			for(int j=0;j<n;j++) {
+				
+			}
+		}
+	}
+
+}

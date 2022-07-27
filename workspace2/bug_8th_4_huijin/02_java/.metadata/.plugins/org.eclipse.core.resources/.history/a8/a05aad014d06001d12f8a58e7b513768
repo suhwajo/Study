@@ -1,0 +1,19 @@
+package practice_1;
+
+public class Daily3_1 {
+
+	public static void main(String[] args) {
+		int a=5;
+		
+		StringBuilder sb = new StringBuilder();
+		for(int i=1;i<=15;i++) {
+			System.out.print(i);
+			
+			
+		}
+		
+		
+		
+	}
+
+}
